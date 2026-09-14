@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
     <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
-    <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/wrynose-bb2.18"/>
+    <remote name="rdkcentral" fetch="https://github.com/rdkcentral"/>
+    <project name="bitbake" path="openembedded-core/bitbake" remote="rdkcentral" revision="rdk/wrynose-bb2.18"/>
     <project name="rdk/components/opensource/oe/meta-clang" path="meta-clang" revision="wrynose"/>
-    <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/wrynose"/>
-    <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="wrynose"/>
-    <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/wrynose"/>
+    <project name="meta-openembedded" path="meta-openembedded" remote="rdkcentral" revision="rdk/wrynose"/>
+    <project name="meta-virtualization" path="meta-virtualization" remote="rdkcentral" revision="wrynose"/>
+    <project name="openembedded-core" path="openembedded-core" remote="rdkcentral" revision="rdk/wrynose"/>
     <project name="meta-lts-mixins" path="meta-lts-mixins" remote="yocto" revision="47cd839e4475b473bf6bdc617b74af65bb52fe73" dest-branch="topic/rdk_wrynose"/>
 </manifest>
